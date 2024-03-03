@@ -139,10 +139,10 @@ footer {
   margin-right: 0;
 }
 
-.centered-image {
-  position: absolute;
-  left: 100px; /* Start 100px from the left */
-  right: 100px; /* End 100px from the right */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
