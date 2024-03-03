@@ -85,6 +85,18 @@ footer {
   background-color: #212529;
   padding: 20px;
 }
+footer table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  height: 4vh;
+}
+
+footer table td {
+  width: calc(100% / 3);
+  text-align: center;
+  height: 20px;
+}
 
 .footer-left-items,
 .footer-left-bottom-items {
@@ -138,13 +150,43 @@ footer {
 .footer-right-items ul li:last-child {
   margin-right: 0;
 }
-
-.center {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  text-align: center;
 }
-
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F8F9FA;
+  font-size: 25;
+}
+.text p{
+  color: #E5E5E5;
+  font-weight: 400;
+  font-weight: lighter;
+}
+.bottom-text{
+  position: absolute;
+  color: #E5E5E5;
+  font-weight: lighter;
+  font-size: 12;
+  bottom:10px;
+  
+}
+.bottom-text td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.bottom-text svg{
+  margin-right: 10px;
+}
 
 .dot {
   color: #DDBEA9;
@@ -153,19 +195,6 @@ footer {
 .container {
   width: calc(100% - 200px);
   margin: 0 auto;
-}
-
-table {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-  height: 100px;
-}
-
-td {
-  width: calc(100% / 3);
-  text-align: center;
-  height: 20px;
 }
 
 .horizontal-line {
