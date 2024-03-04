@@ -81,7 +81,7 @@ footer {
   width: 100%;
   justify-content: space-between;
   font-family: 'Poppins';
-  line-height: 2vh;
+  line-height: 12vh;
   letter-spacing: 0em;
   text-align: left;
   background-color: #212529;
@@ -227,7 +227,6 @@ footer table td {
 .flex-container {
   display: flex;
   flex-direction: row;
-  border: 1px solid #ccc;
   padding: 10px;
   margin-top: 20px;
   max-width: 55%;
@@ -239,9 +238,16 @@ footer table td {
 .flex-item {
   width: 45%;
   padding: 10px;
-  border: 1px solid #ccc;
   margin-left: auto;
   margin-right: auto;
+  flex: 1;
+  margin-right: 20px;
+}
+.flex-item:nth-child(2) {
+  flex: 1.7;
+}
+.separator{
+  margin-right: 10px;
 }
 
 /* Media Queries for responsiveness */
