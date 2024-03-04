@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Default styles */
+
 body {
   background-color: #F8F9FA;
   font-family: 'Poppins';
@@ -8,7 +8,7 @@ body {
   overflow-y: auto;
 }
 
-/* Header */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -74,7 +74,7 @@ header {
   vertical-align: middle;
 }
 
-/* Footer */
+
 footer {
   bottom: 0;
   left: 0;
@@ -170,7 +170,6 @@ footer table td {
   transform: translate(-50%, -50%);
   color: #F8F9FA;
   font-size: 25px;
-  /* Added 'px' unit */
 }
 
 .text p {
@@ -183,7 +182,6 @@ footer table td {
   color: #E5E5E5;
   font-weight: lighter;
   font-size: 12px;
-  /* Added 'px' unit */
   bottom: 10px;
 }
 
@@ -229,7 +227,7 @@ footer table td {
   flex-direction: row;
   padding: 10px;
   margin-top: 20px;
-  max-width: 55%;
+  max-width: 1100px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -241,7 +239,7 @@ footer table td {
   margin-left: auto;
   margin-right: auto;
   flex: 1;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .flex-item:nth-child(2) {
   flex: 1.7;
@@ -249,7 +247,78 @@ footer table td {
 .separator{
   margin-right: 10px;
 }
+.article-flex-container {
+  display: flex;
+  flex-direction: row;
+}
 
+.article-image-flex-item {
+  width: 45%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-right: 10px;
+  flex: 1;
+  text-align: center;
+}
+.article-image-flex-item img{
+  object-fit: cover;
+}
+.article-content-flex-item {
+  width: 45%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+  margin-right: 10px;
+  text-align: left;
+}
+.article-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.article-text {
+  font-size: 12px;
+  color: #6C757D;
+}
+.title {
+  font-size: 16px;
+  color: #212529;
+  font-weight: bold;
+}
+.article-horizontal-line {
+  position: relative;
+  border-top: 1px solid #E5E5E5;
+  width: calc(100%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.article-bottom-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+.article-bottom-info-item-left {
+  font-size: 12px;
+  color: #6C757D;
+  width: 100%;
+  flex: 1;
+  text-align: left;
+}
+.article-bottom-info-item-right {
+  font-size: 12px;
+  color: #6C757D;
+  width: 100%;
+  flex: 1;
+  text-align: right;
+}
+.article-bottom-info-item-right svg{
+ margin-right: 5px;
+ vertical-align: middle;
+}
 /* Media Queries for responsiveness */
 @media screen and (max-width: 768px) {
   .header-left-items {
