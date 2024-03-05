@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var buttons = document.querySelectorAll(".svg-button");
     var counters = document.querySelectorAll(".counter");
 
-    buttons.forEach(function(button, index) {
+    buttons.forEach(function (button, index) {
         var svgIcon = button.querySelector("svg");
         var path = svgIcon.querySelector("path");
 
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var initialCounterValue = parseInt(counter.textContent);
         counter.textContent = initialCounterValue;
 
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function () {
             if (path.getAttribute("fill") !== "red") {
                 path.setAttribute("fill", "red");
                 counter.textContent = parseInt(counter.textContent) + 1;
