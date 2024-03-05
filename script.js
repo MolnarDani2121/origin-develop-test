@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var buttons = document.querySelectorAll("#svg-button");
-    var counters = document.querySelectorAll("#counter");
+    var buttons = document.querySelectorAll(".svg-button");
+    var counters = document.querySelectorAll(".counter");
 
     buttons.forEach(function(button, index) {
         var svgIcon = button.querySelector("svg");
